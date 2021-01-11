@@ -1,0 +1,111 @@
+:root{
+    --Very-Dark-Gray: hsl(0, 0%, 17%);
+    --Button-Hover: hsl(0, 0%, 25%);
+    --Dark-Gray: hsl(0, 0%, 59%);
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.8rem;
+}
+
+header{
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('./images/pattern-bg.png');
+    background-repeat: no-repeat;
+    color: white;
+}
+
+header h1{
+    margin: 2rem 0;
+    font-weight: normal;
+}
+
+header .search{
+    height: 5rem;
+    display: flex;
+}
+
+header .search #ip-andress{
+    width: 40rem;
+    border-radius: 1rem 0 0 1rem;
+    padding: 0 2rem;
+    font-size: 1.8rem; 
+}
+
+header .search button{
+    width: 5rem;
+    border-radius: 0 1rem 1rem 0;
+    background-color: var(--Very-Dark-Gray);
+    cursor: pointer;
+}
+
+header .search button:hover{
+    background-color: var(--Button-Hover);
+}
+
+.map{
+    position: relative;
+}
+
+.map .info-location{
+    z-index: 2;
+    width: 100rem;
+    height: 12rem;
+    background-color: white;
+    border-radius: 1rem;
+    position: absolute;
+    top: -6rem;
+    left: calc(calc(100% - 100rem)/2);
+}
+
+.map .info-location ul{
+    display: flex;
+}
+
+.map .info-location ul li {
+    width: 25%;
+    padding: 0 2rem;
+    margin: 2.6rem 0;
+    border-left: 1px solid var(--Dark-Gray);
+    display: flex;
+    flex-direction: column;
+}
+
+.map .info-location ul li:first-child{
+    border: 0;
+}
+
+.map .info-location ul li .info-title{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--Dark-Gray);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.map .info-location ul li .info{
+    font-weight: 700;
+}
+
+#mapid {
+    z-index: 0;
+    height: 40.5rem; 
+}
