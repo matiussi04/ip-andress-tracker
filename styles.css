@@ -109,3 +109,62 @@ header .search button:hover{
     z-index: 0;
     height: 40.5rem; 
 }
+
+@media(max-width: 1100px){
+    :root{
+        font-size: 50%;
+    }
+
+    #mapid{
+        height: 50rem;
+    }
+}
+
+@media(max-width: 900px){
+    :root{
+        font-size: 40%;
+    }
+
+    #mapid{
+        height: 67.5rem;
+    }
+}
+
+@media(max-width: 900px){
+    .map .info-location{
+        width: 80rem;
+        left: calc(calc(100% - 80rem)/2);
+    }
+}
+
+@media(max-width: 600px){
+    header .search #ip-andress{
+        width: 35rem;
+    }
+
+    .map .info-location{
+        width: 35rem;
+        height: 30rem;
+        top: -10rem;
+        left: calc(calc(100% - 35rem)/2);
+    }
+
+    .map .info-location ul{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .map .info-location ul li{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        border: 0;
+        margin: 0;
+        margin-top: 1rem;
+    }
+
+    .map .info-location ul li .info-title{
+        font-size: 1.2rem; 
+    }
+}
